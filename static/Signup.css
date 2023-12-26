@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#myNavbar {
+  background-color: #000000 !important;
+}
+
+#myNavLink {
+  color: whitesmoke;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+#myNavLink:hover {
+  color: red;
+  font-size: 16px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+}
+.navbar-nav li a {
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+.navbar-toggler .fa-bars {
+  color: white;
+  font-size: 35px;
+}
+
+#navbarNavDropdown {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+#logo {
+  color: white;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-evenly;
+  background: #202020;
+  padding: 30px 0;
+}
+
+.footer-item h3 {
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.footer-item ul {
+  margin-top: 10px;
+}
+.footer-item ul li {
+  padding: 4px 0;
+  list-style-type: none;
+}
+.footer-item ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#login {
+  background: #DE6DFF;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+}
+
+.e-bank {
+  background: rgb(85, 8, 139);
+  background: linear-gradient(to bottom, #693479 0%, #A04FB8 100%);
+  width: 600px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 40px;
+}
+
+#e-bank-header {
+  color: rgb(227, 219, 219);
+  text-align: center;
+}
+
+#e-bank-desc {
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-top: 20px;
+}
+
+.info, .asan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.info #fin,
+.info #birthdate,
+.info #phone,
+.info #asan, .asan-info #fin,
+.asan-info #birthdate,
+.asan-info #phone,
+.asan-info #asan {
+  width: 90%;
+  border-radius: 18px;
+  padding: 15px 20px;
+  background-color: #9054A2;
+  border: 1px solid #9054A2;
+  color: white;
+}
+
+.asan-info {
+  display: none;
+}
+
+#fin::-moz-placeholder, #birthdate::-moz-placeholder, #phone::-moz-placeholder, #asan::-moz-placeholder {
+  color: rgb(194, 192, 189);
+}
+
+#fin::placeholder,
+#birthdate::placeholder,
+#phone::placeholder,
+#asan::placeholder {
+  color: rgb(194, 192, 189);
+}
+
+#next,
+#asan-imza,
+#fin-kod {
+  background-color: #DBB0E8;
+  border: 1px solid #DBB0E8;
+  color: white;
+  font-weight: bold;
+  width: 180px;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+#next:hover,
+#asan-imza:hover,
+#fin-kod:hover {
+  background-color: #540d68;
+  border: 1px solid #540D68;
+}
+
+#e-bank-logo {
+  text-decoration: none;
+  color: white;
+}
+
+#asan-imza, #fin-kod {
+  width: 130px;
+}
+#asan-imza a, #fin-kod a {
+  text-decoration: none;
+  color: white;
+}
+
+.registration-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#new-account {
+  margin-top: 60px;
+  color: white;
+}
+#new-account a {
+  text-decoration: none;
+  color: rgb(196, 194, 194);
+}/*# sourceMappingURL=Signup.css.map */

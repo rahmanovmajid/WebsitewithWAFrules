@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/Login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNavbar">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <div id="logo">
+                        <h1><a href="http://127.0.0.1:5000/">E-BANK</a></h1>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" id="myNavLink" href="#">XİDMƏTLƏRİMİZ<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myNavLink" href="#">HAQQIMIZDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myNavLink" href="#">ƏLAQƏ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main-screen">
+        <section id="login">
+            <div class="e-bank">
+                <h1 id="e-bank-header">E-BANK</h1>
+                <div class="registration-types">
+                    <button id="fin-kod"><a href="#">FIN</a></button>
+                    <button id="asan-imza"><a href="#">ASAN İmza</a></button>
+                </div>
+                <p id="e-bank-desc">Giriş</p>
+                <div class="info">
+                    <form action="/login" method="post">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        <input type="text" name="email" placeholder="Email" id="fin" style="margin-bottom: 10px;">
+                        <input type="password" name="password" placeholder="Password" id="password">
+                        <input type="submit" value="Login" id="sign-in">
+                    </form>
+
+                    
+
+
+                </div>
+                <div class="asan-info">
+                    <input type="text" id="asan" placeholder="ASAN imza">
+                    <input type="password" id="password" placeholder="Parol">
+                </div>
+                <div class="extra-info">
+                    <h6 id="new-account">Hesabın yoxdur? <a href="http://127.0.0.1:5000/signup">Yenisi yarat</a></h6>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="comment-section">
+            <div class="e-bank">
+                <h1 id="e-bank-header">Submit your comment</h1>
+                
+                <div class="comment">
+                    <form action="/submit_comment" method="post">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        <input id="comment-input" name="comment" type="text" placeholder=" write comment" id="fin">
+                        <input type="submit" id="sign-in" value="submit comment" style="margin-top: 15px;">
+                    </form>
+
+
+                    
+                    <form id="buttons" action="/submit_file" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        <input type="file" name="file">
+                        <input type="submit" value="Upload">
+                    </form>
+                    
+                </div>
+                
+                
+
+            </div>
+        </section>
+
+
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="row footer-row">
+            <div class="col-lg-3 footer-item">
+                <div class="movie-info">
+                    <h3>Movies</h3>
+                    <ul>
+                        <li><a href="">Batman</a></li>
+                        <li><a href="">The Avengers</a></li>
+                        <li><a href="">Deadpool</a></li>
+                        <li><a href="">Iron Man</a></li>
+                        <li><a href="">Thor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 footer-item">
+                <div class="comics-info">
+                    <h3>Comics</h3>
+                    <ul>
+                        <li><a href="">Deadpool: Bad Blood</a></li>
+                        <li><a href="">Age of Ultron</a></li>
+                        <li><a href="">Elektra</a></li>
+                        <li><a href="">New Fantastic Four</a></li>
+                        <li><a href="">A.X.E. : Judgment Day</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 footer-item">
+                <div class="comics-info">
+                    <h3>Comics</h3>
+                    <ul>
+                        <li><a href="">Deadpool: Bad Blood</a></li>
+                        <li><a href="">Age of Ultron</a></li>
+                        <li><a href="">Elektra</a></li>
+                        <li><a href="">New Fantastic Four</a></li>
+                        <li><a href="">A.X.E. : Judgment Day</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="../static/Login.js" defer></script>
+</body>
+
+</html>

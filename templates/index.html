@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bu hissə saytın baş hissəsidir. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E-Bank</title>
+</head>
+
+
+
+
+<!-- Bu hissə saytın bədən hissəsidir. -->
+<body>
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNavbar">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <div class="hamburger extraaaa">
+                        <input type="checkbox">
+                        <div class="hamburgerlines">
+                            <span class="lines line1">
+
+                            </span>
+                            <span class="lines line2">
+
+                            </span>
+                            <span class="lines line3">
+
+                            </span>
+                        </div>
+                        <ul class="menu-items">
+                            <hr>
+                            <li><a href="../Cards/Cards.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger">
+                        <input type="checkbox">
+                        <div class="hamburgerlines">
+                            <span class="lines line1">
+
+                            </span>
+                            <span class="lines line2">
+
+                            </span>
+                            <span class="lines line3">
+
+                            </span>
+                        </div>
+                        <ul class="menu-items">
+                            <li><a href="../MyCards/MyCards.html">Cards</a></li>
+                            <hr>
+                            <li><a href="../Credits/Credits.html">My Credits</a></li>
+                            <hr>
+                            <li><a href="../Cards/Cards.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div id="logo">
+                        <h1><a id="e-bank-logo" href="#"><img src="../static/photos/ebank_logo.png" id="bank-logo"
+                                    alt="bank-logo"></a></h1>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active services-link">
+                            <a class="nav-link" id="myNavLink" href="#services">Our services<span
+                                    class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item about-link">
+                            <a class="nav-link" id="myNavLink" href="#info">About</a>
+                        </li>
+                        <li class="nav-item contact-link">
+                            <a class="nav-link" id="myNavLink" href="#footer">Contacs</a>
+                        </li>
+                    </ul>
+                    <div class="sign-in-div">
+                        <button id="sign-in-btn">Login</button>
+                    </div>
+
+                    <div class="login-div">
+                        <h1 id="username"></h1>
+                        <button id="logout">Exit</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+
+
+
+    <!-- BU hissə saytın əsas hissəsidir. -->
+    <!-- main start -->
+    <main>
+        <!-- banner start -->
+        <section id="banner">
+            <div class="banner-info">
+                <h1 id="banner-header-text">The place where all<br>banks are concentrated</h1>
+                <p id="banner-text">e-Bank online platform for users <br> convenience in the digital environment
+                        and saves time.</p>
+                <p class="extra-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellendus
+                    omnis, aliquid aliquam molestias repudiandae, soluta odit fugiat dolore optio dolorem dolorum
+                    voluptas. Maiores alias eum perspiciatis ab molestias laudantium.</p>
+                <button id="banner-button">More</button>
+            </div>
+            <img src="../static/photos/sekil1.jpg" id="banner-img" alt="sekil">
+        </section>
+        <!-- banner end -->
+        <!-- currency start -->
+        <section id="currency">
+
+        </section>
+        <!-- currency end -->
+        <!-- services start -->
+        <section id="services">
+            <div class="container">
+                <div class="row" id="services-div">
+                    <div class="card">
+                        <h2>Digital card</h2>
+                        <p>You can easily use digital cards from the platform.</p>
+                        <button id="more-btn">More</button>
+                    </div>
+                    <div class="card">
+                        <h2>Cards</h2>
+                        <p>You can get information about the cards and order them..</p>
+                        <button id="more-btn">More</button>
+                    </div>
+                    <div class="card">
+                        <h2>Credits</h2>
+                        <p>You can get information about Loans from the platform</p>
+                        <button id="more-btn">More</button>
+                    </div>
+
+                </div>
+                <div class="row" id="banks-div">
+                    <div class="card">
+                        <h2>A BANK</h2>
+                        <button id="a-bank">Get acquainted</button>
+                    </div>
+                    <div class="card">
+                        <h2>B BANK</h2>
+                        <button id="b-bank">Get acquainted</button>
+                    </div>
+                    <div class="card">
+                        <h2>C BANK</h2>
+                        <button id="c-bank">Get acquainted</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services end -->
+        <!-- info start -->
+        <section id="info">
+            <h3 id="info-header">Who are we</h3>
+            <p id="info-description">On end is a digital solution for a product agency <br>
+                that relates people relations with products, story <br> development, and other services.
+            </p>
+            <button id="info-button">GET A FREE CONSULTATION </button>
+        </section>
+        <!-- info end -->
+
+        <!-- superiorities start -->
+        <section id="superiorities">
+            <h1>More convenient for you</h1>
+            <div class="container">
+                <div class="row">
+                    <p>Web Design and Development</p>
+                    <p>Web Design and Development</p>
+                </div>
+                <div class="row">
+                    <p>Web Design and Development</p>
+                    <p>Web Design and Development</p>
+                </div>
+                <div class="row">
+                    <p>Web Design and Development</p>
+                    <p>Web Design and Development</p>
+                </div>
+            </div>
+        </section>
+        <!-- superitorities end -->
+        <!-- currency converter start -->
+        <section id="currency-converter">
+            <div id="currency">
+                <h1>Loan Calculator</h1>
+                <div class="from">
+                    <h3>My currency</h3>
+                    <div class="from-info">
+                        <select id="from-select">
+                            <option value="">Choose your currency</option>
+                        </select>
+                        <input type="text" id="amount" placeholder="enter">
+                    </div>
+                </div>
+                <hr>
+                <div class="to">
+                    <h3>Currency to be converted</h3>
+                    <div class="to-info">
+                        <select id="to-select">
+                            <option value="">Choose your currency</option>
+                        </select>
+                        <input type="text" id="result" placeholder="enter">
+                    </div>
+                </div>
+            </div>
+            <div class="rates">
+            </div>
+        </section>
+        <!-- currency converter end -->
+
+        <!-- collaboration start -->
+        <section id="collaboration">
+            <section id="statistics">
+                <h1>Statistics</h1>
+                <div class="container statistics-container">
+                    <div class="row statistics-row">
+                        <div class="col-lg-4 col-md-12 col-12 statistics-item">
+                            <h1>Banks</h1>
+                            <span id="likes">0</span>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12 statistics-item">
+                            <h1>Products</h1>
+                            <span id="comments">0</span>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12 statistics-item">
+                            <h1>Users</h1>
+                            <span id="purchases">0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="collabs">
+                <h1>Cooperation is done</h1>
+                <div class="collab-banks">
+                    <img src="../static/photos/Monzo_Bank_img.png" alt="sekil">
+                    <img src="../static/photos/e4f7c4245686fd937f0457b6319dec87.png" alt="sekil">
+                    <img src="../static/photos/9-phoenix-1024x1024.jpg" alt="sekil">
+                    <img src="../static/photos/batgvt1xjs4h457m08tynj3tbe_thumbnail.png" alt="sekil">
+                </div>
+            </div>
+        </section>
+        <!-- collaboration end -->
+    </main>
+    <!-- main end -->
+
+
+
+
+    <!-- BU hissə saytın son hissəsidir. -->    
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="row footer-row">
+            <div class="col-lg-3 footer-item">
+                <div class="info">
+                    <p>Any arising related to the online platform <br>You can contact us about the problem
+                      problem.</p>
+                </div>
+                <div class="info">
+                    <div class="info-item">
+                        <span>E-mail</span>
+                        <p>jameshickie@akm.az</p>
+                    </div>
+                    <div class="info-item">
+                        <span>Telephone</span>
+                        <p>+44 7412548787</p>
+                    </div>
+
+                    <div class="sm-links">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="copyrights">
+                <p>All rights reserved ©</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+
+    <!-- BU hissə javascript ilə əlaqə qurmaq üçün istifadə olunur. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="../static/index.js" defer></script>
+</body>
+
+</html>
